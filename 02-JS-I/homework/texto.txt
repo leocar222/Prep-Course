@@ -1,0 +1,5 @@
+ * Variables: las variables son elementos que permiten guardar algo en un espacio de memoria
+ * Strings: los strings son un tipo de variable cuya característica es ser una cadena de caracteres
+ * Funciones (argumentos, `return`): las funciones se utilizan para utilizar un mismo código reiteradamente siempre dependiendo de los argumentos que se le ingresen a la función y retornando un valor estipulado según la función
+ * Declaraciones `if`: las declaraciones como if permiten manejar a criterio el flujo de la información realizando diferentes acciones según lo necesite el programa
+ * Valores booleanos (`true`, `false`): los valores booleanos son un tipo de variable que solo puede tener solo dos valores: verdadero o falso
