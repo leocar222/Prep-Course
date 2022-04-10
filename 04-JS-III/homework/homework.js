@@ -156,7 +156,7 @@ function diaDeLaSemana(numeroDeDia) {
   if(numeroDeDia===1||numeroDeDia===7){
     return('Es fin de semana');
   }
-  return('Es dia laboral');
+  else return('Es dia Laboral');
 } 
 
 
@@ -191,12 +191,17 @@ function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
+//   // Tu código:
+var nuevoarray=[];
 for(i=0;i<array.length;i++){
   if(array[i]==='Enero'||array[i]==='Marzo'||array[i]==='Noviembre'){
-    var nuevoarray=nuevoarray.push(array[i]);
+     nuevoarray.push(array[i]);
   }
 }
+ if(nuevoarray.length<3){
+   return('No se encontraron los meses pedidos');
+ }
+ return(nuevoarray);
 }
 
 
@@ -204,6 +209,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var nuevoarray=[];
+  for(i=0;i<array.length;i++){
+    if(array[i]>100){
+      nuevoarray.push(array[i]);
+    }
+  }
+  return(nuevoarray);
 }
 
 
@@ -215,6 +227,16 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let arreglo=[]
+  for(i=0;i<10;i++){
+    numero=numero+2;
+    arreglo.push(numero);
+    if(numero===i){
+      return('Se interrumpió la ejecución');
+      break;
+    }
+  }
+  return(arreglo);
 }
 
 
@@ -225,6 +247,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let arreglo=[]
+  for(i=0;i<10;i++){
+    if(i===5){
+      continue;
+    }
+    numero=numero+2;
+    arreglo.push(numero);
+  }
+  return(arreglo);
 }
 
 
